@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ Catalyst/Quizzy/app/src/main/res/drawable/loader_bg.xml" value="0.12395833333333334" />
+        <entry key="..\:/ Catalyst/Quizzy/app/src/main/res/drawable/selected_option_border_bg.xml" value="0.17604166666666668" />
+        <entry key="..\:/ Catalyst/Quizzy/app/src/main/res/layout/activity_main.xml" value="0.31366335448979465" />
+        <entry key="..\:/ Catalyst/Quizzy/app/src/main/res/layout/activity_quiz_question.xml" value="0.16158415231292453" />
+        <entry key="..\:/ Catalyst/Quizzy/app/src/main/res/layout/dropdown_item.xml" value="0.24139492753623187" />
+        <entry key="..\:/ Catalyst/Quizzy/app/src/main/res/layout/loader.xml" value="0.19960395285714205" />
+        <entry key="..\:/Quizzy/app/src/main/res/drawable/correct_option_border_bg.xml" value="0.2609375" />
+        <entry key="..\:/Quizzy/app/src/main/res/drawable/default_option_border_bg.xml" value="0.2609375" />
+        <entry key="..\:/Quizzy/app/src/main/res/drawable/ic_launcher_background.xml" value="0.21614583333333334" />
+        <entry key="..\:/Quizzy/app/src/main/res/drawable/selected_option_border_bg.xml" value="0.1765625" />
+        <entry key="..\:/Quizzy/app/src/main/res/drawable/wrong_option_border_bg.xml" value="0.2609375" />
+        <entry key="..\:/Quizzy/app/src/main/res/layout/activity_finish.xml" value="0.31366335448979465" />
+        <entry key="..\:/Quizzy/app/src/main/res/layout/activity_main.xml" value="0.13306930190476138" />
+        <entry key="..\:/Quizzy/app/src/main/res/layout/activity_quiz_question.xml" value="0.20910890299319643" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="temurin-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

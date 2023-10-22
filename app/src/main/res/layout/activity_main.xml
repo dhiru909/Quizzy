@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="17sp"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/ic_bg">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Quizzy!"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20sp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:cardCornerRadius="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="17sp"
+            >
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Welcome"
+                android:textColor="#363A43"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Please enter your name."
+                android:textColor="#7A8089"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="17dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/ic_name"
+                app:helperText="required*"
+                app:helperTextEnabled="true"
+                app:helperTextTextColor="#DA357F"
+                app:endIconMode="clear_text"
+                app:counterEnabled="true"
+                app:hintAnimationEnabled="true"
+                app:counterMaxLength="20"
+                app:boxBackgroundColor="@color/design_default_color_background"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etName"
+                    android:hint="Name"
+                    android:inputType="textCapWords"
+                    android:textColor="@color/purple_700"
+                    android:textColorHint="#7A8089"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.appcompat.widget.AppCompatEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/ic_category"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/etCategory"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:text="General Knowledge"
+                    android:inputType="none"
+                    android:maxLength="20"
+                    android:hint="Category"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                app:startIconDrawable="@drawable/ic_difficulty"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                    android:id="@+id/etDifficulty"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="none"
+                    android:text="Easy"
+                    android:hint="Difficulty"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@color/design_default_color_primary"
+                android:text="Start"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+
+                >
+            </Button>
+        </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
+</ScrollView>
