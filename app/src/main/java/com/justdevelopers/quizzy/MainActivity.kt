@@ -1,11 +1,10 @@
 package com.justdevelopers.quizzy
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
-import androidx.core.content.ContentProviderCompat.requireContext
+import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.textfield.MaterialAutoCompleteTextView
 import java.util.*
 
@@ -23,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         )
         val btnStart:Button = findViewById(R.id.btnStart)
         val etName:EditText=findViewById(R.id.etName)
+        etName.setText(intent.getStringExtra("namee"))
         val etCategory:MaterialAutoCompleteTextView = findViewById(R.id.etCategory)
         val etDifficulty:MaterialAutoCompleteTextView = findViewById(R.id.etDifficulty)
         val difficulty = resources.getStringArray(R.array.difficulty)
@@ -32,6 +32,14 @@ class MainActivity : AppCompatActivity() {
         val arrayAdapterCategory = ArrayAdapter(this,R.layout.dropdown_item,categoryMap.keys.toList())
         etCategory.setAdapter(arrayAdapterCategory)
         etName.maxWidth=2
+        findViewById<Button>(R.id.logoutButton).setOnClickListener{
+            val loginPrefs = getSharedPreferences("login", MODE_PRIVATE)
+            val editor = loginPrefs.edit()
+            editor.putString("name", null)
+            editor.apply()
+            startActivity(Intent(this, Login::class.java))
+            finish()
+        }
         btnStart.setOnClickListener{
             if (etName.text.isEmpty()) {
                 Toast.makeText(this,"please enter your Name",Toast.LENGTH_LONG).show()

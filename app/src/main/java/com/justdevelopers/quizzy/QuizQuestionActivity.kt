@@ -196,7 +196,7 @@ class QuizQuestionActivity : AppCompatActivity(),View.OnClickListener {
                 mTimer?.cancel()
                 mCurrenPosition++
                 when {
-                    mCurrenPosition <= mQuestionsList?.size -> {
+                    mCurrenPosition <= mQuestionsList.size -> {
                         setQuestion()
                     }
                     else->{
@@ -224,7 +224,7 @@ class QuizQuestionActivity : AppCompatActivity(),View.OnClickListener {
                     btnSubmit?.text = "FINISH"
                 } else {
                     if(mCurrenPosition != mQuestionsList.size)
-                    btnSubmit?.text = "Go to next Question"
+                        btnSubmit?.text = "Go to next Question"
                 }
                 mSelectedOption = ""
             }
